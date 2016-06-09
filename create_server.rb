@@ -18,7 +18,8 @@ with_machine_options({
 
 1.upto(1) do |i|
 machine "Petstore#{i}" do
-  recipe 'chef-jmxtrans','collectd'
+  recipe 'chef-jmxtrans'
+  recipe 'collectd'
   tag 'Catalyst'
   converge true
 end
