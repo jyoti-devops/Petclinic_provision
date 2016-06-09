@@ -7,7 +7,7 @@ with_machine_options({
     image_id: "ami-9a5787f9", # default for us-west-1
     instance_type: "t2.small",
     key_name: "arajdevops", # If not specified, this will be used and generated
-    key_path: "~/.chef/keys/arajdevops",
+    key_path: "/home/ubuntu/GoldenDemo.pem",
     subnet_id: 'subnet-f1171486',
     security_group_ids: 'sg-7d0bd819' 
       },
@@ -19,7 +19,7 @@ with_machine_options({
 1.upto(1) do |i|
 machine "Petstore#{i}" do
   #recipe 'Petstore'
-  tag 'ops'
+  tag 'Catalyst'
   converge true
 end
 end
