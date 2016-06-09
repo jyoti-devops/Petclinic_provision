@@ -6,7 +6,7 @@ with_machine_options({
     bootstrap_options: {
     image_id: "ami-a8e993c8", # default for us-west-1
     instance_type: "t2.small",
-    key_name: "arajdevops", # If not specified, this will be used and generated
+    key_name: "GoldenDemo", # If not specified, this will be used and generated
     key_path: "/home/ubuntu/GoldenDemo.pem",
     subnet_id: 'subnet-d7df258e',
     security_group_ids: 'sg-eeff688b' 
