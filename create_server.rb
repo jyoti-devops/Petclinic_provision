@@ -8,8 +8,8 @@ with_machine_options({
     instance_type: "t2.small",
     key_name: "arajdevops", # If not specified, this will be used and generated
     key_path: "/home/ubuntu/GoldenDemo.pem",
-    subnet_id: 'subnet-f1171486',
-    security_group_ids: 'sg-7d0bd819' 
+    subnet_id: 'subnet-d7df258e',
+    security_group_ids: 'sg-eeff688b' 
       },
   use_private_ip_for_ssh: false, # DEPRECATED, use `transport_address_location`
   transport_address_location: :public_ip, # `:public_ip` (default), `:private_ip` or `:dns`.  Defines how SSH or WinRM should find an address to communicate with the instance.
