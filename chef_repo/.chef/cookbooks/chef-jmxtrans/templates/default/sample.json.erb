@@ -1,0 +1,19 @@
+{
+  "servers" : [ {
+    "port" : "9999",
+    "host" : "localhost",
+    "queries" : [ {
+      "outputWriters" : [ {
+        "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriterFactory",
+          "port" : 2003,
+          "host" : "52.74.230.150"
+      } ],
+      "obj" : "java.lang:type=OperatingSystem",
+      "attr" : [ "SystemLoadAverage", "AvailableProcessors", "TotalPhysicalMemorySize",
+                "FreePhysicalMemorySize", "TotalSwapSpaceSize", "FreeSwapSpaceSize",
+                "OpenFileDescriptorCount", "MaxFileDescriptorCount" ]
+    } ],
+    "numQueryThreads" : 2
+  } ]
+}
+
