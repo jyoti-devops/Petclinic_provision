@@ -4,7 +4,7 @@ with_driver 'aws'
 
 with_machine_options({
     bootstrap_options: {
-    image_id: "ami-a8e993c8", # default for us-west-1
+    image_id: "ami-4aceb42a", # default for us-west-1
     instance_type: "t2.small",
     key_name: "GoldenDemo", # If not specified, this will be used and generated
     key_path: "/home/ubuntu/.chef/keys/GoldenDemo.pem",
