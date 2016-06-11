@@ -5,11 +5,11 @@ with_driver 'aws'
 with_machine_options({
     bootstrap_options: {
     image_id: "ami-4aceb42a", # default for us-west-1
-    instance_type: "t2.small",
+    instance_type: "t2.medium",
     key_name: "GoldenDemo", # If not specified, this will be used and generated
     key_path: "/home/ubuntu/.chef/keys/GoldenDemo.pem",
     subnet_id: 'subnet-d7df258e',
-    security_group_ids: 'sg-eeff688b' 
+    security_group_ids: 'sg-eeff688b'
       },
   use_private_ip_for_ssh: false, # DEPRECATED, use `transport_address_location`
   transport_address_location: :public_ip, # `:public_ip` (default), `:private_ip` or `:dns`.  Defines how SSH or WinRM should find an address to communicate with the instance.
